@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+
+}
+i{
+    color: #f6425b;
+}
+.price{
+    color:#f6425b
+}
+button {
+    color:white;
+    background-color: #f6425b;
+    border: none;
+}
+.container >div{
+    width: 50vw;
+}
+.top_two{
+    border: none;
+    border-bottom: 1px solid;
+    width: 20vw;
+}
+.container >div p{
+    font-size: 13px;
+}
+.date{
+    display: flex;
+}
+.date input{
+    width: 50px;
+}
+.date div{
+    margin-right: 30px;
+}
+button{
+    margin-left: 50px;
+    width: 10vw;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+.card{
+    border:1px solid;
+    width: 50%;
+    height: 200px;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-color: #f6425b;
+    border-radius: 8px;
+}
+.top_card{
+    margin-left: 80%;
+    color: white;
+}
+.main_card_content{
+    margin: 15px;
+}
+.name_area{
+    
+    font-size: 6px;
+    color: white;
+}
+.card_number{
+    color: white;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.name_area >p{
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-size: 6px;
+}
+.expiry{
+    font-size: 6px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.expiry >p{
+    margin-bottom: 0;
+    font-size: 6px;
+}
+.downofcard{
+    display: flex;
+    justify-content: space-between;
+}
+.main_card_content input{
+    background: none;
+    border: none;
+}
+.name{
+    margin-top: 0px;
+}
+.exp{
+    margin-top: 0px;
+}
+.cvc{
+    margin-top: 0;
+}

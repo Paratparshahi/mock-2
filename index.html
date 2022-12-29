@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/b4906ba0c9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+           <div class="card">
+             <Div class="top_card">
+                <h3>VISA</h3>
+                
+             </Div>
+             <div class="main_card_content">
+                <p class="card_number">4256 7890 5678 4532</p>
+                <br>
+                <div class="downofcard">
+                    <div class="name_area">
+                 <p>CARD HOLDER</p>
+                 <p class="name">Your name</p>
+                </div>
+                <div class="expiry">
+                 <p>EXPIRES</p>
+                 <p class="exp">09/ <SPan class="expye">20</SPan></p>
+                </div>
+                <div class="expiry">
+                    <p>CVC</p>
+                    <p class="cvc">345</p>
+                   </div>
+                <div>
+                    <p></p>
+                </div>
+                </div>
+             </div>
+           </div>
+        </div>
+        <div>
+            <h2>Payment details</h2>
+            <div>
+                <form action="">
+                    <p>CARDHOLDER NAME</p>
+                    <i class="fa-solid fa-user-shield"></i>
+                    <input type="text" class="top_two" id="holder_names" oninput="Holdername()">
+                    <p>CARD NUMBER</p>
+                    <i class="fa-regular fa-credit-card" ></i>
+                    <input type="text" class="top_two" id="holder_number" oninput="Holdernumber()">
+                    <div class="date">
+                    <div>
+                    <p>EXPIRY MONTH</p>
+                    <i class="fa-regular fa-calendar-days" ></i>
+                    <input type="number" id="month" oninput="Holdermonth()">
+                    </div>
+                    <div>
+                        <p>EXPIRY YEAR</p>
+                        <i class="fa-regular fa-calendar-days" ></i>
+                        <input type="number" id="year" oninput="HolderYear()">
+                    </div>
+                    <div>
+                        <p>CVC</p>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="number" id="cvc" oninput="HolderCvv()">
+                    </div>
+                </div>
+                  <h4>Payment amount: <span class="price"> 12300 </span></h4>
+
+                  <button class="ppp" onclick="Submit()">
+                    Pay
+                  </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+     var holder_names = document.getElementById('holder_names').value;
+     var holder_number =document.getElementById('holder_number').value;
+     var month= document.getElementById('month').value;
+     var year = document.getElementById('year').value;
+     
+
+     function Holdername() {
+       event.preventDefault()
+       var holder_names= document.getElementById('holder_names').value;
+      const ele= document.getElementsByClassName('name')[0];
+      ele.innerText=holder_names
+    }
+    function Holdernumber(){
+        var holder_number = document.getElementById('holder_number').value;
+        const ele2= document.getElementsByClassName('card_number')[0];
+        ele2.innerText=holder_number
+    }
+    function Holdermonth() {
+        var month = document.getElementById('month').value;
+        const ele3 =document.getElementsByClassName('exp')[0]
+        ele3.innerText=month+'/'
+    }
+    function HolderYear(){
+        var year = document.getElementById('year').value;
+        const ele5 =document.getElementsByClassName('expye')[0]
+        ele5.innerText=year;
+        
+        console.log(year)
+    }
+    function HolderCvv() {
+        var cvc = document.getElementById('cvc').value||377;
+        const ele4 =document.getElementsByClassName('cvc')[0]
+        ele4.innerText=cvc
+    }
+    function Submit() {
+        event.preventDefault()
+       window.location.href="./Otp.html" 
+    } 
+     
+</script>
+</html>
